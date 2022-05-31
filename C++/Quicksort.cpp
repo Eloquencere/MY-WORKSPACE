@@ -1,6 +1,19 @@
 #include<iostream>
 using namespace std;
+
+class select; //? What do I do?
+
 int ar[5]={1,11,15,0,10},low=0,high=4,count=0,i,small,j;
+
+int main()
+{   
+    select s;
+    s.sort();
+    s.display();
+    return 0;
+
+}
+
 class select
 {
 public:
@@ -24,6 +37,7 @@ public:
             count++;
         }
     }
+    
     void display()
     {
         int j=low;
@@ -33,10 +47,3 @@ public:
         }
     }
 };
-int main()
-{   
-    select s;
-    s.sort();
-    s.display();
-    return 0;
-}
