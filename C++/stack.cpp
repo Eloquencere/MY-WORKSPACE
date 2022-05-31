@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
+
 #define size 5
+
 class stack
 {
     int s[size],top=-1,item;
@@ -28,7 +30,7 @@ class stack
                 s[--top];
             }
         }
-        void display()
+        void display()  //! Infinite loop!
         {
             int trav;
             trav=top;
@@ -40,8 +42,28 @@ class stack
 };
 int main()
 {
-    cout<<"1.push,2.pop,3.display"<<endl;
     int choice;
-    cin>>choice;
+    stack s;
+    for(int i=0;i<=1;i++)
+    {
+        cout<<"1.push,2.pop,3.display,4.exit"<<endl;
+        cin>>choice;
+        if(choice==1)
+        {
+            s.push();
+        }
+        else if(choice==2)
+        {
+            s.pop();
+        }
+        else if(choice==3)
+        {
+            s.display();
+        }
+        else
+        {
+            exit(0);
+        }
+    }
     return 0;
-}
+}  
