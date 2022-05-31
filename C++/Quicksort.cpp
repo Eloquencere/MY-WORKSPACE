@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int ar[5]={1,11,15,0,10},low=0,high=4,count=0,i,small,j;
+int ar[5]={1,11,15,0,10},low=0,high=4,count=0,i,small,j, k;
 class select
 {
 public:
